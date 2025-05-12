@@ -13,7 +13,7 @@ public class AppConfig {
     }
 
     @Bean(name="cat")
-    @Scope("prototype")
+    @Scope("singleton")
     public Cat getCat() {
         Cat cat = new Cat();
         cat.setMessage("Hello World!");
